@@ -1,0 +1,9 @@
+
+This was built using contiki 2.6 but it was tested under 3.0 release
+
+Replace udp-server.c and udp-client.c at /contiki/examples/ipv6/rpl-udp/ folder;
+Create your simulation using tmote Sky:
+
+max of 20 nodes or you will experience memory issues
+
+Enjoy!
