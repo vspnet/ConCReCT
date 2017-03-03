@@ -1,0 +1,29 @@
+TIMEOUT(36000000, log.log("\n" + "last msg: " + msg + "\n"));
+
+while (true) {
+
+sim = mote.getSimulation();
+
+m = sim.getMote(1);
+log.log("Clicking mote: " + m + "\n");
+m.getInterfaces().getButton().clickButton();
+
+GENERATE_MSG(20000, "continue1");
+YIELD_THEN_WAIT_UNTIL(msg.equals("continue1"));
+
+m = sim.getMote(2);
+log.log("Clicking mote: " + m + "\n");
+m.getInterfaces().getButton().clickButton();
+
+GENERATE_MSG(20000, "continue2");
+YIELD_THEN_WAIT_UNTIL(msg.equals("continue2"));
+
+m = sim.getMote(3);
+log.log("Clicking mote: " + m + "\n");
+m.getInterfaces().getButton().clickButton();
+
+GENERATE_MSG(300000, "loop");
+YIELD_THEN_WAIT_UNTIL(msg.equals("loop"));
+
+}
+
