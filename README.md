@@ -5,8 +5,7 @@ Mechanism for mitigating a Denial of Service Volumetric attack against IoT based
 ConCReCT
 ========
 
-Vladimir Borgiani
-Emilio R. Tubino
+Vladimir Borgiani & Emilio R. Tubino
 
 Developed using contiki 2.7 and validated with Cooja simulator
 
@@ -14,7 +13,6 @@ The goal of this code is to allow a sink server to identify a traffic increase (
 
 TEN -> Traffic Expected at node N
 TMN -> Traffic Measured at node N
-
 
 Server
 ======
@@ -59,7 +57,7 @@ Client
 Filters to apply to mote output in order to better view and troubleshoot issues
 ===============================================================================
 
-NO: 		  Information about child nodes
+NO: 	  	Information about child nodes
 SISTEMA:	All server and client important information
 DATA: 		Data exchanged
-MATRIZ:   Server matrix information
+MATRIZ:   	Server matrix information
