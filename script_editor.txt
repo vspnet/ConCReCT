@@ -26,4 +26,3 @@ GENERATE_MSG(300000, "loop");
 YIELD_THEN_WAIT_UNTIL(msg.equals("loop"));
 
 }
-
