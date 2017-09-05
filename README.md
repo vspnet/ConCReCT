@@ -11,6 +11,8 @@ Developed using contiki 2.7 and validated with Cooja simulator
 
 The goal of this code is to allow a sink server to identify a traffic increase (not compatible with regular network traffic) and mute the malicious node.
 
+Works better on contiki version named contiki-ids-ids built by Sahid Raza at SVELTE mechanism!!!
+
 TEN -> Traffic Expected at node N
 TMN -> Traffic Measured at node N
 
