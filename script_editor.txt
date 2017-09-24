@@ -1,3 +1,9 @@
+Script below is an automated way to start attacks at one or more nodes with a 20 sec interval between each attack starts.
+After starts simulation you run script and this will control specific nodes actions (right click that can be done manually).
+All timers may be adjusted as loop in 300000 ms means is expected all attackers are mute and back alive after 5 minutes. That may not be true if you increase the number of simultaneous attackers or change other timers.
+
+##############################
+
 TIMEOUT(36000000, log.log("\n" + "last msg: " + msg + "\n"));
 
 while (true) {
