@@ -253,7 +253,7 @@ tcpip_handler(void)
 {
     char *str; 
     int cont = 0;
-    int f = filhosMeu;
+    int f = 0;
     char aux[2];
     aux[0] = ' ';
     aux[1] = ' ';
@@ -281,7 +281,7 @@ tcpip_handler(void)
         aux[1] =  str[1];
         f=atoi(aux);    //transforma o texto recebido em numero (nfihlos)
 
-        //cont = consultaM(MatP,UIP_IP_BUF->srcipaddr.u8[sizeof(UIP_IP_BUF->srcipaddr.u8) - 1], f); //verifica os filhos
+        cont = consultaM(MatP,UIP_IP_BUF->srcipaddr.u8[sizeof(UIP_IP_BUF->srcipaddr.u8) - 1], f); //verifica os filhos
 
 //#if SERVER_REPLY
         if(cont == 5)  	// se o no esta ok envia apenas ok
